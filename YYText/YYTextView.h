@@ -11,6 +11,10 @@
 
 #import <UIKit/UIKit.h>
 
+
+#ifndef __YYTextView_h__
+#define __YYTextView_h__
+
 #if __has_include(<YYText/YYText.h>)
 #import <YYText/YYTextParser.h>
 #import <YYText/YYTextLayout.h>
@@ -408,3 +412,5 @@ UIKIT_EXTERN NSString *const YYTextViewTextDidChangeNotification;
 UIKIT_EXTERN NSString *const YYTextViewTextDidEndEditingNotification;
 
 NS_ASSUME_NONNULL_END
+
+#endif

@@ -11,6 +11,10 @@
 
 #import <UIKit/UIKit.h>
 
+
+#ifndef __YYLabel_h__
+#define __YYLabel_h__
+
 #if __has_include(<YYText/YYText.h>)
 #import <YYText/YYTextParser.h>
 #import <YYText/YYTextLayout.h>
@@ -378,3 +382,6 @@ IB_DESIGNABLE
 #endif // !TARGET_INTERFACE_BUILDER
 
 NS_ASSUME_NONNULL_END
+
+
+#endif

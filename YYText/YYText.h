@@ -11,6 +11,10 @@
 
 #import <UIKit/UIKit.h>
 
+
+#ifndef __YYText_h__
+#define __YYText_h__
+
 #if __has_include(<YYText/YYText.h>)
 FOUNDATION_EXPORT double YYTextVersionNumber;
 FOUNDATION_EXPORT const unsigned char YYTextVersionString[];
@@ -48,3 +52,7 @@ FOUNDATION_EXPORT const unsigned char YYTextVersionString[];
 #import "NSParagraphStyle+YYText.h"
 #import "UIPasteboard+YYText.h"
 #endif
+
+#endif
+
+
