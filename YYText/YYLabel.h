@@ -30,18 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 #if !TARGET_INTERFACE_BUILDER
 
 
-typedef NS_ENUM(NSInteger, YYLabelTextType) {
-    YYLabelTextType_None,
-    YYLabelTextType_Link,
-};
 
-typedef void(^tapActionBlock)(YYLabelTextType type, NSString *text, NSString *linkURL);
-
-@interface YYLabelTapAction : NSObject
-
-+ (YYTextAction)tapActionWith:(YYLabelTextType)type block:(tapActionBlock)block;
-
-@end
 
 
 
