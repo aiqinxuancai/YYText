@@ -151,7 +151,7 @@ static dispatch_queue_t YYTextAsyncLayerGetReleaseQueue() {
         }
         
         dispatch_async(YYTextAsyncLayerGetDisplayQueue(), ^{
-            if (isCancelled()) {
+            if (isCancelled() || size.width < 1 || size.height < 1) {
                 CGColorRelease(backgroundColor);
                 return;
             }
